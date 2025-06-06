@@ -28,7 +28,7 @@ class Auth extends BaseController
                         'rol' => $usuario['rol'],
                         'isLoggedIn' => true
                     ]);
-                    return redirect()->to('/dashboard');
+                    return redirect()->to('auth/dashboard');
                 } else {
                     session()->setFlashdata('error', 'Correo o contraseña incorrectos.');
                 }
@@ -39,6 +39,8 @@ class Auth extends BaseController
 
         return view('auth/login');
     }
+
+ 
 
     public function registrar()
     {

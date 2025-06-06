@@ -63,7 +63,7 @@
           <?php if (session()->getFlashdata('error')): ?>
             <div class="alert alert-danger"><?php echo session()->getFlashdata('error') ?></div>
           <?php endif; ?>
-          <form action="../index3.html" method="post">
+          <form action="<?php echo base_url('login') ?>" method="post">
             <?php echo csrf_field() ?>
             <div class="input-group mb-1">
               <div class="form-floating">
