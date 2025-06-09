@@ -89,17 +89,7 @@
               </div>
               <div class="input-group-text"><span class="bi bi-lock-fill"></span></div>
             </div>
-            <div class="input-group mb-1">
-              <div class="form-floating">
-                <select id="registerRole" name="rol" class="form-control" required>
-                  <option value="agente" <?php echo old('rol') === 'agente' ? 'selected' : '' ?>>Agente</option>
-                  <option value="supervisor" <?php echo old('rol') === 'supervisor' ? 'selected' : '' ?>>Supervisor</option>
-                  <option value="administrador" <?php echo old('rol') === 'administrador' ? 'selected' : '' ?>>Administrador</option>
-                </select>
-                <label for="registerRole">Rol</label>
-              </div>
-              <div class="input-group-text"><span class="bi bi-person-badge"></span></div>
-            </div>
+            
             <!--begin::Row-->
             <div class="row">
               <div class="col-12">
@@ -111,7 +101,7 @@
             <!--end::Row-->
           </form>
           <p class="mb-0">
-            <br><a href="<?php echo base_url('login') ?>" class="text-center">Volver al inicio de sesión</a>
+            <br>¿Ya tienes cuenta?<a href="<?php echo base_url('login') ?>" class="text-center">Iniciar sesión</a>
           </p>
         </div>
         <!-- /.login-card-body -->
